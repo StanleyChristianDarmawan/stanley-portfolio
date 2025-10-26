@@ -48,7 +48,7 @@ const badgeVariants = {
     y: -3,
     transition: { type: "spring", stiffness: 300, damping: 15 },
   },
-};
+} as const;
 
 export function SkillBadge({ name }: { name: string }) {
   const Icon = ICON_MAP[name.toLowerCase()] || Code;
