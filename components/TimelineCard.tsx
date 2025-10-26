@@ -5,6 +5,7 @@ import { MapPin } from "lucide-react";
 type TimelineCardProps = {
   title: string;
   subtitle: string;
+  major?: string;
   date: string;
   location?: string;
   employmentType?: string;
@@ -14,6 +15,7 @@ type TimelineCardProps = {
 export function TimelineCard({
   title,
   subtitle,
+  major,
   date,
   location,
   employmentType,
@@ -33,6 +35,7 @@ export function TimelineCard({
             <p className="text-base font-medium text-muted-foreground">
               {subtitle}
             </p>
+            <p className="text-sm text-muted-foreground">{major}</p>
           </div>
           <p className="text-sm text-muted-foreground mt-1 sm:mt-0">
             {date}

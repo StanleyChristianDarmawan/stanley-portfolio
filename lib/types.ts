@@ -22,6 +22,8 @@ export type EducationFrontmatter = {
   slug: string;
   institution: string;
   degree: string;
+  major: string;
+  location: string;
   date: string;
   order: number;
   content: string;
