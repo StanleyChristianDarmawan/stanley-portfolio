@@ -45,7 +45,7 @@ const TEXT_ENTER_VARIANTS = {
     opacity: 1,
     transition: {
       delay: i * 0.1 + 0.3,
-      ease: [0.215, 0.61, 0.355, 1],
+      ease: [0.215, 0.61, 0.355, 1] as const,
       duration: 0.6,
     },
   }),
@@ -59,7 +59,7 @@ const SHAPE_ENTER_VARIANTS = {
     rotate: 15,
     transition: {
       delay: 0.1,
-      ease: [0.215, 0.61, 0.355, 1],
+      ease: [0.215, 0.61, 0.355, 1] as const,
       duration: 1.2,
     },
   },
@@ -85,7 +85,7 @@ const FADE_IN_UP_VARIANTS = {
       ease: "easeInOut",
     },
   },
-};
+} as const;
 
 
 export default function HomePageClient({
@@ -272,6 +272,7 @@ export default function HomePageClient({
                       <TimelineCard
                         title={item.degree}
                         subtitle={item.institution}
+                        major={item.major}
                         date={item.date}
                         location={item.location}
                         contentNode={educationNodes[index]}
