@@ -82,7 +82,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             {frontmatter.title}
           </h1>
           <p className="text-xl text-muted-foreground mb-6">
-            {fronttransform.description}
+            {frontmatter.description}
           </p>
           <div className="flex flex-wrap gap-2">
             {frontmatter.tags?.map((tag: string) => (
