@@ -20,7 +20,9 @@ export async function generateMetadata({ params }: Props) {
 
   try {
     const { frontmatter } = (await getProjectData(slug)) as {
+      slug: string;
       frontmatter: ProjectFrontmatter;
+      content: string;
     };
     if (!frontmatter) {
       return {
@@ -52,6 +54,7 @@ export default async function ProjectDetailPage({ params }: Props) {
   let data;
   try {
     data = (await getProjectData(slug)) as {
+      slug: string;
       frontmatter: ProjectFrontmatter;
       content: string;
     };
