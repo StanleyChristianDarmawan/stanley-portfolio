@@ -175,11 +175,11 @@ export default function HomePageClient({
             >
               <Button size="lg" asChild className="bg-sky-600 hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-600 text-white">
                 <Link href="/projects">
-                  Lihat Proyek Saya <ArrowRight className="ml-2 h-5 w-5" />
+                  Explore My Profile <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="hover:border-sky-500 hover:text-sky-500 dark:hover:border-sky-400 dark:hover:text-sky-400 transition-colors">
-                <Link href="#contact">Hubungi Saya</Link>
+                <Link href="#contact">Contact Me</Link>
               </Button>
             </motion.div>
 
